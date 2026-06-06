@@ -431,6 +431,70 @@ color:white;
 
 }
 
+    .produto-box{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.carousel{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.carousel-track{
+    display:flex;
+    width:max-content;
+    animation:slide 20s linear infinite;
+}
+
+.carousel-track img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+.produto-info{
+    padding:25px;
+}
+
+.produto-info h3{
+    color:#b5478a;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.preco{
+    color:#d85ca3;
+    font-weight:bold;
+    font-size:18px;
+    margin:5px 0;
+}
+
+.btn-produto{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#d85ca3;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
 </style>
 </head>
 <body>
@@ -478,103 +542,154 @@ Nossos Produtos
 
 <div class="produtos-scroll">
 
-    <!-- KIT -->
-    <div class="produto-card">
-        <img src="kit.jpg" alt="Kit Personalizado">
+   <div class="carousel">
+    <div class="carousel-track">
+        <img src="kit1.jpg">
+        <img src="kit2.jpg">
+        <img src="kit3.jpg">
+        <img src="kit4.jpg">
 
-        <div class="produto-info">
-            <h3>Kit Personalizado</h3>
-
-            <p class="preco">20 unidades - R$ 70,00</p>
-            <p class="preco">30 unidades - R$ 99,00</p>
-            <p class="preco">40 unidades - R$ 124,00</p>
-
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Comprar
-            </a>
-        </div>
+        <img src="kit1.jpg">
+        <img src="kit2.jpg">
+        <img src="kit3.jpg">
+        <img src="kit4.jpg">
     </div>
+</div>
 
-    <!-- FLORES -->
-    <div class="produto-card">
-        <img src="flores.jpg" alt="Flores de Papel">
+<div class="produto-info">
 
-        <div class="produto-info">
-            <h3>Flores de Papel</h3>
+    <h3>Kits Personalizados</h3>
 
-            <p class="preco">A partir de R$ 6,00</p>
+    <div class="preco">20 unidades — R$ 70,00</div>
+    <div class="preco">30 unidades — R$ 99,00</div>
+    <div class="preco">40 unidades — R$ 124,00</div>
 
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Comprar
-            </a>
-        </div>
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20nos%20Kits%20Personalizados"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="flor1.jpg">
+        <img src="flor2.jpg">
+        <img src="flor3.jpg">
+
+        <img src="flor1.jpg">
+        <img src="flor2.jpg">
+        <img src="flor3.jpg">
     </div>
+</div>
 
-    <!-- TOPO PREMIUM -->
-    <div class="produto-card">
-        <img src="topo-premium.jpg" alt="Topo Premium">
+<div class="produto-info">
 
-        <div class="produto-info">
-            <h3>Topo de Bolo Premium</h3>
+    <h3>Flores em Papel</h3>
 
-            <p class="preco">A partir de R$ 32,00</p>
+    <div class="preco">A partir de R$ 6,00</div>
 
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Comprar
-            </a>
-        </div>
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20nas%20Flores%20em%20Papel"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="premium1.jpg">
+        <img src="premium2.jpg">
+        <img src="premium3.jpg">
+
+        <img src="premium1.jpg">
+        <img src="premium2.jpg">
+        <img src="premium3.jpg">
     </div>
+</div>
 
-    <!-- TOPO COMUM -->
-    <div class="produto-card">
-        <img src="topo-comum.jpg" alt="Topo Comum">
+<div class="produto-info">
 
-        <div class="produto-info">
-            <h3>Topo de Bolo Comum</h3>
+    <h3>Topo de Bolo Premium</h3>
 
-            <p class="preco">A partir de R$ 24,90</p>
+    <div class="preco">A partir de R$ 32,00</div>
 
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Comprar
-            </a>
-        </div>
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20no%20Topo%20Premium"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="comum1.jpg">
+        <img src="comum2.jpg">
+        <img src="comum3.jpg">
+
+        <img src="comum1.jpg">
+        <img src="comum2.jpg">
+        <img src="comum3.jpg">
     </div>
+</div>
 
-    <!-- MODELOS DIVERSOS -->
-    <div class="produto-card">
-        <img src="diversos.jpg" alt="Modelos Diversos">
+<div class="produto-info">
 
-        <div class="produto-info">
-            <h3>Modelos Diversos</h3>
+    <h3>Topo de Bolo Comum</h3>
 
-            <p>Solicite um orçamento personalizado.</p>
+    <div class="preco">A partir de R$ 24,90</div>
 
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Solicitar Orçamento
-            </a>
-        </div>
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20no%20Topo%20de%20Bolo%20Comum"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="data1.jpg">
+        <img src="data2.jpg">
+        <img src="data3.jpg">
+
+        <img src="data1.jpg">
+        <img src="data2.jpg">
+        <img src="data3.jpg">
     </div>
+</div>
 
-    <!-- DATAS COMEMORATIVAS -->
-    <div class="produto-card">
-        <img src="datas.jpg" alt="Datas Comemorativas">
+<div class="produto-info">
 
-        <div class="produto-info">
-            <h3>Datas Comemorativas</h3>
+    <h3>Datas Comemorativas</h3>
 
-            <p>Solicite um orçamento personalizado.</p>
+    <p>Brindes e personalizados para datas especiais.</p>
 
-            <a href="https://wa.me/5521992118584"
-               class="orcamento">
-               Solicitar Orçamento
-            </a>
-        </div>
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20nos%20produtos%20de%20Datas%20Comemorativas"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
+<div class="carousel">
+    <div class="carousel-track">
+        <img src="diverso1.jpg">
+        <img src="diverso2.jpg">
+        <img src="diverso3.jpg">
+
+        <img src="diverso1.jpg">
+        <img src="diverso2.jpg">
+        <img src="diverso3.jpg">
     </div>
+</div>
+
+<div class="produto-info">
+
+    <h3>Modelos Diversos</h3>
+
+    <p>Caixas, cenários e personalizados exclusivos.</p>
+
+    <a href="https://wa.me/5521992118584?text=Olá,%20tenho%20interesse%20nos%20Modelos%20Diversos"
+       class="btn-produto">
+       Solicitar Orçamento
+    </a>
+
+</div>
 
 </div>
 
