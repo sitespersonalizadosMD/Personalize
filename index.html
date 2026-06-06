@@ -361,6 +361,75 @@ color:white;
     border-radius:30px;
     font-weight:600;
 }
+    .produtos-scroll{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    padding:20px 5px;
+    scroll-behavior:smooth;
+}
+
+.produtos-scroll::-webkit-scrollbar{
+    height:8px;
+}
+
+.produtos-scroll::-webkit-scrollbar-thumb{
+    background:#d85ca3;
+    border-radius:20px;
+}
+
+.produto-card{
+    min-width:320px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    flex-shrink:0;
+}
+
+.produto-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.produto-info{
+    padding:25px;
+}
+
+.produto-info h3{
+    color:#b5478a;
+    margin-bottom:15px;
+}
+
+.preco{
+    color:#25a55b;
+    font-weight:700;
+    margin:8px 0;
+}
+
+.orcamento{
+    display:inline-block;
+    margin-top:15px;
+    background:#d85ca3;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .produto-card{
+        min-width:280px;
+    }
+
+    .produto-card img{
+        height:200px;
+    }
+
+}
 
 </style>
 </head>
@@ -403,122 +472,111 @@ Ver Catálogo
 
 <section class="section">
 
-    <h2 class="section-title">
-        Nossos Produtos
-    </h2>
+<h2 class="section-title">
+Nossos Produtos
+</h2>
 
-    <div class="produtos-scroll">
+<div class="produtos-scroll">
 
-        <!-- KITS -->
+    <!-- KIT -->
+    <div class="produto-card">
+        <img src="kit.jpg" alt="Kit Personalizado">
 
-        <div class="produto-card">
-            <h3>Kits Personalizados</h3>
+        <div class="produto-info">
+            <h3>Kit Personalizado</h3>
 
-            <p>20 unidades</p>
-            <span class="preco">R$ 70,00</span>
+            <p class="preco">20 unidades - R$ 70,00</p>
+            <p class="preco">30 unidades - R$ 99,00</p>
+            <p class="preco">40 unidades - R$ 124,00</p>
 
-            <p>30 unidades</p>
-            <span class="preco">R$ 99,00</span>
-
-            <p>40 unidades</p>
-            <span class="preco">R$ 124,00</span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Kits%20Personalizados"
-               class="btn-produto">
-               Solicitar
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
+               Comprar
             </a>
         </div>
+    </div>
 
-        <!-- FLORES -->
+    <!-- FLORES -->
+    <div class="produto-card">
+        <img src="flores.jpg" alt="Flores de Papel">
 
-        <div class="produto-card">
-            <h3>Flores em Papel</h3>
+        <div class="produto-info">
+            <h3>Flores de Papel</h3>
 
-            <p>A partir de</p>
+            <p class="preco">A partir de R$ 6,00</p>
 
-            <span class="preco">
-                R$ 6,00
-            </span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Flores%20em%20Papel"
-               class="btn-produto">
-               Solicitar
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
+               Comprar
             </a>
         </div>
+    </div>
 
-        <!-- TOPO PREMIUM -->
+    <!-- TOPO PREMIUM -->
+    <div class="produto-card">
+        <img src="topo-premium.jpg" alt="Topo Premium">
 
-        <div class="produto-card">
+        <div class="produto-info">
             <h3>Topo de Bolo Premium</h3>
 
-            <p>A partir de</p>
+            <p class="preco">A partir de R$ 32,00</p>
 
-            <span class="preco">
-                R$ 32,00
-            </span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Topo%20Premium"
-               class="btn-produto">
-               Solicitar
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
+               Comprar
             </a>
         </div>
+    </div>
 
-        <!-- TOPO COMUM -->
+    <!-- TOPO COMUM -->
+    <div class="produto-card">
+        <img src="topo-comum.jpg" alt="Topo Comum">
 
-        <div class="produto-card">
+        <div class="produto-info">
             <h3>Topo de Bolo Comum</h3>
 
-            <p>A partir de</p>
+            <p class="preco">A partir de R$ 24,90</p>
 
-            <span class="preco">
-                R$ 24,90
-            </span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Topo%20de%20Bolo%20Comum"
-               class="btn-produto">
-               Solicitar
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
+               Comprar
             </a>
         </div>
+    </div>
 
-        <!-- MODELOS DIVERSOS -->
+    <!-- MODELOS DIVERSOS -->
+    <div class="produto-card">
+        <img src="diversos.jpg" alt="Modelos Diversos">
 
-        <div class="produto-card">
+        <div class="produto-info">
             <h3>Modelos Diversos</h3>
 
-            <p>
-                Caixas, cenários e personalizados exclusivos.
-            </p>
+            <p>Solicite um orçamento personalizado.</p>
 
-            <span class="preco">
-                Sob Consulta
-            </span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Modelos%20Diversos"
-               class="btn-produto">
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
                Solicitar Orçamento
             </a>
         </div>
+    </div>
 
-        <!-- DATAS COMEMORATIVAS -->
+    <!-- DATAS COMEMORATIVAS -->
+    <div class="produto-card">
+        <img src="datas.jpg" alt="Datas Comemorativas">
 
-        <div class="produto-card">
+        <div class="produto-info">
             <h3>Datas Comemorativas</h3>
 
-            <p>
-                Brindes e lembranças personalizadas.
-            </p>
+            <p>Solicite um orçamento personalizado.</p>
 
-            <span class="preco">
-                Sob Consulta
-            </span>
-
-            <a href="https://wa.me/5521992118584?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Datas%20Comemorativas"
-               class="btn-produto">
+            <a href="https://wa.me/5521992118584"
+               class="orcamento">
                Solicitar Orçamento
             </a>
         </div>
-
     </div>
+
+</div>
 
 </section>
 
