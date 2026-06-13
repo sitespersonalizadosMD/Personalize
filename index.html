@@ -739,6 +739,30 @@ color:white;
     scroll-behavior:smooth;
 }
 
+    .menu details{
+    width:100%;
+}
+
+.menu summary{
+    cursor:pointer;
+    font-weight:600;
+    color:#555;
+    padding:8px 0;
+    list-style:none;
+}
+
+.menu summary::-webkit-details-marker{
+    display:none;
+}
+
+.menu details a{
+    display:block;
+    padding:8px 15px;
+    color:#777;
+    text-decoration:none;
+    font-size:14px;
+}
+
 </style>
 </head>
 <body>
@@ -751,17 +775,26 @@ color:white;
 </button>
 
 <nav class="menu">
-    <a href="#inicio">Início</a>
-    <a href="#kits">Kits Personalizados</a>
-    <a href="#flores">Flores em Papel</a>
-    <a href="#topo">Topo de Bolo</a>
-    <a href="#premium">Topo Premium</a>
-    <a href="#diversos">Modelos Diversos</a>
-    <a href="#diversos-premium">Diversos Premium</a>
-    <a href="#como-funciona">Como Funciona</a>
-    <a href="#pagamentos">Pagamento</a>
-    <a href="#localizacao">Localização</a>
-    <a href="https://wa.me/5521992118584">WhatsApp</a>
+
+    <a href="#inicio">🏠 Início</a>
+
+    <details>
+        <summary>🎁 Catálogo de Produtos</summary>
+
+        <a href="#kits">Kits Personalizados</a>
+        <a href="#flores">Flores em Papel</a>
+        <a href="#premium">Topo Premium</a>
+        <a href="#topo">Topo de Bolo</a>
+        <a href="#diversos">Modelos Diversos</a>
+        <a href="#diversos-premium">Diversos Premium</a>
+
+    </details>
+
+    <a href="#como-funciona">💖 Como Funciona</a>
+    <a href="#pagamentos">💳 Pagamentos</a>
+    <a href="#localizacao">📍 Localização</a>
+    <a href="https://wa.me/5521992118584">📱 WhatsApp</a>
+
 </nav>
     
 </header>
