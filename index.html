@@ -691,33 +691,48 @@ color:white;
 .beneficio-card p{
     color:#555;
 }
-
     .menu-toggle{
-    display:none;
-    font-size:30px;
-    background:none;
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:10000;
+
+    width:60px;
+    height:60px;
+
     border:none;
-    color:#b5478a;
+    border-radius:50%;
+
+    background:#d85ca3;
+    color:white;
+
+    font-size:28px;
     cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.menu{
+    position:fixed;
+    top:90px;
+    right:20px;
+
+    width:280px;
+
+    background:white;
+    border-radius:20px;
+    padding:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    display:none;
+    flex-direction:column;
+    gap:12px;
+
+    z-index:9999;
 }
 
-@media(max-width:768px){
-
-    .menu{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        background:white;
-        padding:20px;
-    }
-
-    .menu.active{
-        display:flex;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
+.menu.active{
+    display:flex;
 }
 
 </style>
