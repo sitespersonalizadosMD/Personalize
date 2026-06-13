@@ -692,6 +692,34 @@ color:white;
     color:#555;
 }
 
+    .menu-toggle{
+    display:none;
+    font-size:30px;
+    background:none;
+    border:none;
+    color:#b5478a;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .menu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:white;
+        padding:20px;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -699,12 +727,24 @@ color:white;
 <header>
 <div class="logo">Personalize.com</div>
 
-<nav>
-<a href="#">Início</a>
-<a href="#">Produtos</a>
-<a href="#">Portfólio</a>
-<a href="#">Contato</a>
+<button class="menu-toggle">
+☰
+</button>
+
+<nav class="menu">
+    <a href="#inicio">Início</a>
+    <a href="#kits">Kits Personalizados</a>
+    <a href="#flores">Flores em Papel</a>
+    <a href="#topo">Topo de Bolo</a>
+    <a href="#premium">Topo Premium</a>
+    <a href="#diversos">Modelos Diversos</a>
+    <a href="#diversos-premium">Diversos Premium</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#pagamentos">Pagamento</a>
+    <a href="#localizacao">Localização</a>
+    <a href="https://wa.me/5521992118584">WhatsApp</a>
 </nav>
+    
 </header>
 
 <section class="hero">
@@ -716,12 +756,12 @@ color:white;
 Transforme a sua festa em um momento ainda mais especial com os nossos personalizados
 </p>
 
-<a href="#" class="btn btn-primary">
-Solicitar Orçamento
+<a href="#produtos" class="btn btn-primary">
+Ver Produtos
 </a>
 
-<a href="#" class="btn btn-secondary">
-Ver Catálogo
+<a href="https://wa.me/5521992118584" class="btn btn-secondary">
+Falar no WhatsApp
 </a>
 </div>
 
@@ -1153,6 +1193,15 @@ Nossos Produtos
     </svg>
 
 </a>
+
+    <script>
+const botao = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+botao.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>
