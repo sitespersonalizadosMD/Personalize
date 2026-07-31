@@ -447,6 +447,7 @@ color:white;
 
 .carousel-track{
     display:flex;
+    flex-wrap:nowrap;   /* impede quebrar para outra linha */
     width:max-content;
     animation:slide 30s linear infinite;
 }
@@ -455,7 +456,7 @@ color:white;
     width:350px;
     height:350px;
     object-fit:cover;
-    flex-shrink:0;
+    flex:0 0 auto;
 }
 
 @keyframes slide{
@@ -770,6 +771,12 @@ color:white;
     font-size:14px;
 }
 
+    .carousel{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    height:350px;
+}
 </style>
 </head>
 <body>
